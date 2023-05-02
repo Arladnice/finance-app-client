@@ -4,14 +4,12 @@ import { Box, Typography, useTheme } from "@mui/material";
 import FlextBetween from "@/components/FlexBetween";
 import PixIcon from "@mui/icons-material/Pix";
 
-type Props = {};
-
 const ROUTES = {
   DASHBOARD: "dashboard",
   PREDICTIONS: "predictions",
 };
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState(ROUTES.DASHBOARD);
 
